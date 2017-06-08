@@ -238,6 +238,9 @@ img {
         * {
             margin-top: 3px;
         }
+        li a {
+            font-size: 0.7em;
+        }
         h2 {
             font-size: 3.2em;
         }
