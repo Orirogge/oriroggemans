@@ -1,0 +1,269 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+/* GENERAL */
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        transition: .5s ease;
+        -webkit-transition: .5s ease;
+    }
+
+    h2 {
+        font-size: 5em;
+        margin-bottom: 15px;
+        width: 920px;
+    }
+
+    h6 {
+        text-align: center;
+        width: 920px;
+    }
+
+    p.content {
+        width: 920px;
+        line-height: 1.4em;
+        margin: 0 auto;
+
+        font-size: 1.3em;
+        font-weight: 300;
+        text-align: justify;
+        -webkit-columns: 2; /* Chrome, Safari, Opera */
+        -moz-columns: 2; /* Firefox */
+        columns: 2;
+    }
+
+    p a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+    }
+
+    p a:hover {
+        opacity: 0.5;
+    }
+
+    #change:after{
+        content:'passion';
+    }
+
+    #change:hover:after{
+        content:'dream';
+    }
+
+    #green {
+        color: #88e587;
+    }
+
+    .email {
+        text-decoration: underline;
+        margin: 0;
+        font-weight: 400;
+    }
+
+
+/* NAVIGATION */
+
+    li {
+        display: inline;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        width: 920px;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+    }
+
+    li a:hover {
+        opacity: 0.5;
+    }
+
+    #nav_logo {
+        float: left;
+        font-weight: bold;
+    }
+    
+    #nav_active {
+        color: #88e587;
+    }
+
+    #nav_logo_mobile {
+        display: none;;
+        float: left;
+    }
+
+
+
+/* FOOTER */
+
+    footer {
+        color: black;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.8em;
+        width: 920px;
+    }
+
+    .line {
+        border-top: 1px solid #eaeaea;
+        padding: 20px;
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+
+/* TO TOP BUTTON */
+
+    #top_button {
+        display: none;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    #top_button:hover {
+        background-color: #88e587;
+    }
+
+/* IMAGES */
+
+.grid {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    margin-bottom: -20px;
+}
+
+.half {
+    float: left;
+    width: 50%;
+}
+
+.forth {
+    float: left;
+    width: 25%;
+}
+
+.right {
+    float: right;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* BIG */
+    @media screen and (max-width: 940px){
+        .line {
+            width: 90%;
+        }
+        h2 {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 4.8em;
+        }
+        p.content {
+            -webkit-columns: 1;
+            -moz-columns: 1; 
+            columns: 1;
+            width: 95%;
+            margin-left: 10px;
+        }
+    }
+
+/* SMALLER */
+    @media screen and (max-width: 768px){
+        p.content {
+            width: 95%;
+            }
+        h2 {
+            font-size: 3.4em;
+        }
+        .half {
+            float: left;
+            width: 50%;
+        }
+        .forth {
+            float: left;
+            width: 50%;
+        }
+        .right {
+            float: right;
+        }
+
+
+    }
+
+/* SMALLEST */
+    @media screen and (max-width: 480px){
+        * {
+            margin-top: 3px;
+        }
+        h2 {
+            font-size: 3.2em;
+        }
+        #nav_logo_mobile {
+            display: inline-block;
+        }
+        #nav_logo {
+            display: none;
+        }
+        footer {
+            margin-top: 10px;
+        }
+        .half {
+            float: none;
+            width: 100%;
+        }
+        .forth {
+            float: none;
+            width: 100%;
+        }
+        .right {
+            float: none;
+        }
+
+    }
+
+
+
