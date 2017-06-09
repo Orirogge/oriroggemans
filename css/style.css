@@ -1,8 +1,13 @@
-/* FONTS */
+/********************/
+/* Copyright: Ori Roggemans
+/* PORTFOLIO - DESIGN
+/********************/
+
+/****** FONTS ******/
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
-/* GENERAL */
+/****** GENERAL ******/
 
     * {
         box-sizing: border-box;
@@ -24,6 +29,7 @@
         font-size: 5em;
         margin-bottom: 15px;
         width: 920px;
+        pointer-events: none;
     }
 
     h6 {
@@ -35,13 +41,14 @@
         width: 920px;
         line-height: 1.4em;
         margin: 0 auto;
-
+        margin-top: 40px;
         font-size: 1.3em;
         font-weight: 300;
         text-align: justify;
         -webkit-columns: 2; /* Chrome, Safari, Opera */
         -moz-columns: 2; /* Firefox */
         columns: 2;
+        pointer-events: none;
     }
 
     p a {
@@ -51,7 +58,7 @@
     }
 
     p a:hover {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     #change:after{
@@ -73,7 +80,7 @@
     }
 
 
-/* NAVIGATION */
+/****** NAVIGATION ******/
 
     li {
         display: inline;
@@ -99,7 +106,7 @@
     }
 
     li a:hover {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     #nav_logo {
@@ -117,27 +124,26 @@
     }
 
 
-
-/* FOOTER */
+/****** FOOTER ******/
 
     footer {
         color: black;
         letter-spacing: 1px;
         text-align: center;
         margin-top: 40px;
+        margin-bottom: 30px;
         font-size: 0.8em;
         width: 920px;
     }
 
     .line {
         border-top: 1px solid #eaeaea;
-        padding: 20px;
         width: 90%;
         font-size: 0.9em;
     }
 
 
-/* TO TOP BUTTON */
+/****** TO TOP BUTTON ******/
 
     #top_button {
         display: none;
@@ -150,19 +156,21 @@
         background-color: black;
         color: white;
         cursor: pointer;
-        padding: 20px;
+        padding: 14px 16px;
+        font-size: 14px;
     }
 
     #top_button:hover {
         background-color: #88e587;
     }
 
-/* IMAGES */
+/****** GRID IMAGES ******/
 
 .grid {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 img {
@@ -170,29 +178,35 @@ img {
     height: auto;
     display: block;
     padding: 10px;
-    margin-bottom: -20px;
+    
 }
 
 .half {
     float: left;
     width: 50%;
+    margin-bottom: -20px;
 }
 
 .forth {
     float: left;
     width: 25%;
+    margin-bottom: -20px;
 }
 
 .right {
     float: right;
+    margin-bottom: -20px;
+}
+
+.image:hover {
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 
-
-
-
-/* MEDIA QUERIES */
-/* BIG */
+/****** MEDIA QUERIES ******/
+/****** SMALL DESKTOP ******/
     @media screen and (max-width: 940px){
         .line {
             width: 90%;
@@ -210,10 +224,10 @@ img {
         }
     }
 
-/* SMALLER */
+/****** TABLET ******/
     @media screen and (max-width: 768px){
         p.content {
-            width: 95%;
+            width: 93%;
             }
         h2 {
             font-size: 3.4em;
@@ -233,7 +247,7 @@ img {
 
     }
 
-/* SMALLEST */
+/****** MOBILE ******/
     @media screen and (max-width: 480px){
         * {
             margin-top: 3px;
